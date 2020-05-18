@@ -21,7 +21,7 @@ pipeline {
                 sh 'mvn clean compile'
                 }
             }
-        }
+        
         
         stage ('Test Stage') {
 
@@ -29,7 +29,7 @@ pipeline {
                 sh 'mvn test'
                 }
             }
-        }
+        
     
     stage ('Package Stage') {
 
@@ -37,7 +37,7 @@ pipeline {
                  sh 'mvn package'
                 }
             }
-        }
+        
     
     
         
